@@ -1,0 +1,21 @@
+  #numpad {
+    display: grid;
+
+    /* The rows, columns and areas of the grid are defined visually
+     * using the grid-template-areas property.  Each string is a row,
+     * and each word an area.  The number of words in a string
+     * determines the number of columns. Note the number of words
+     * in each string must be identical. */
+    grid-template-areas: "tc1 tl1 tl2 tl3    tdel"
+                         "tc2 t1  t2  t3     tr1"
+                         "tc3 t4  t5  t6     tr2"
+                         "tc4 t7  t8  t9     tenter"
+                         "tc5 t0  t0  tpoint tenter";
+
+    /* The way to size columns and rows can be assigned with the
+     * grid-template-columns and grid-template-rows properties. */
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+  }
+}
+

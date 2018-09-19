@@ -1,6 +1,6 @@
 {
-  "name": "PWA of Thrones",
-  "short_name": "Thrones PWA",
+  "name": "Portable POS",
+  "short_name": "Portable POS",
   "icons": [
     {
       "src": "icons/icon-128x128.png",
@@ -28,7 +28,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#D0D0DD",
   "theme_color": "#2F3BA2"

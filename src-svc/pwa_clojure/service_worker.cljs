@@ -3,7 +3,7 @@
             [pwa-clojure.routes :as routes]
             [bidi.bidi :as bidi]))
 
-(def app-cache-name "pwa-clojure-app")
+(def app-cache-name "portable-pos-app")
 
 (defn- purge-old-caches [e]
   (-> js/caches
@@ -16,12 +16,12 @@
                     js/Promise.all)))))
 
 (def files-to-cache ["/js/main.js"
+                     "/index.html"
+                     "/favicon.png"
                      "/css/main.css"
                      "/css/pw_maze_white.png"
                      "/css/gears.svg"
                      "/shell.html"
-
-                     "/api/characters"
 
                      "https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Open+Sans:400,800"])
 

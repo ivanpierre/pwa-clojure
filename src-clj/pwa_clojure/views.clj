@@ -1,32 +1,26 @@
 (ns pwa-clojure.views
   (:require [hiccup.page :refer [html5 include-js]]
             [pwa-clojure.pages :as pages]
-            [rum.core :as rum]
-            [pwa-clojure.server.data :as data]
-            [pwa-clojure.components :as components]))
+            [pwa-clojure.server.data :as data]))
 
 (defn layout [component title seo-fields]
   {:headers {"Content-Type" "text/html"}
    :body
    (html5
     [:head
+     {:profile "http://www.w3.org/2005/10/profile"}
      [:title title]
      [:link {:rel "stylesheet" :href "/css/main.css"}]
      [:link {:rel "manifest" :href "/manifest.json"}]
-     (seq seo-fields)
+     [:link {:rel "icon" :type "image/png" :href "/favicon.png"}]
+     [:meta {:name "description" :content "Home Page"}]
      [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Open+Sans:400,800"}]
      [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
      [:meta {:name "apple-mobile-web-app-capable" :content "yes"}]
      [:meta {:name "apple-mobile-web-app-status-bar-style" :content "black"}]
-     [:meta {:name "apple-mobile-web-app-title" :content "PWA of Thrones"}]]
+     [:meta {:name "apple-mobile-web-app-title" :content "Portable POS"}]]
     [:body
-     [:div.container
-      [:div#header-container
-       (rum/render-html (components/main-navigation))]
-      [:header
-       [:a.toggle {:href "#main-navigation" :title "menu"} [:span]]
-       [:h1.title "PWA of Thrones"]]
-      [:div#container (rum/render-html component)]]
+     [:div#app component]
      (include-js "/js/main.js")])})
 
 (defn- seo-fields [handler data]
@@ -40,7 +34,7 @@
         component (pages/pwa-component handler data)]
     (layout component (pages/title handler data) (seo-fields handler data))))
 
-(rum/defc empty-component []
+(defn empty-component []
   [:div.app-loading])
 
 (defn shell-page [request]

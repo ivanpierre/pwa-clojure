@@ -1,8 +1,7 @@
 (ns pwa-clojure.service-worker
   (:require [cemerick.url :as url]
             [pwa-clojure.routes :as routes]
-            [bidi.bidi :as bidi]
-            [clojure.string :as str]))
+            [bidi.bidi :as bidi]))
 
 (def app-cache-name "pwa-clojure-app")
 

@@ -15,10 +15,10 @@
                     clj->js
                     js/Promise.all)))))
 
-(def files-to-cache ["/js/main.js"
+(def files-to-cache [; "/js/main.js"
                      "/index.html"
                      "/favicon.png"
-                     "/css/main.css"
+                     ; "/css/main.css"
                      "/css/pw_maze_white.png"
                      "/css/gears.svg"
                      "/shell.html"

@@ -1,44 +1,41 @@
 (ns pwa-clojure.components.numpad
   (:require [reagent.core :as r]))
 
-(defn numpad [first-line first-col]
-  [:div#numpad
-   (first-line)
-   [:div#tdel "EFF"]
+(defn Touche
+  [id nom]
+  [:button {:id (str "t" (name id)) :key (str "t" (name id)) :display "block" :width "100%" :height "100%"} (str nom)])
 
-   (first-col)
+(def map-default
+  [[:l1 ""]
+   [:l2 ""]
+   [:l3 ""]
+   [:r1 ""]
+   [:r2 ""]
+   [:EFF "EFF"]
+   [:c1 ""]
+   [:c2 ""]
+   [:c3 ""]
+   [:c4 ""]
+   [:c5 ""]
+   [:n1 "1"]
+   [:n2 "2"]
+   [:n3 "3"]
+   [:n4 "4"]
+   [:n5 "5"]
+   [:n6 "6"]
+   [:n7 "7"]
+   [:n8 "8"]
+   [:n9 "9"]
+   [:n0 "0"]
+   [:point "."]
+   [:ENT "E\nN\nT"]])
 
-   [:div#t1 "1"]
-   [:div#t2 "2"]
-   [:div#t3 "3"]
+(defn Numpad [key-pattern]
+  (reduce conj [:div.numpad {:key "numpad"}] (map #(apply Touche %) key-pattern)))
 
-   [:div#t4 "4"]
-   [:div#t5 "5"]
-   [:div#t6 "6"]
-
-   [:div#t7 "7"]
-   [:div#t8 "8"]
-   [:div#t9 "9"]
-
-   [:div#t0 "0"]
-   [:div#tpoint "."]
-   [:div#tenter "ENT"]])
-
-(defn first-line-a []
-  [:div#tl1 "tl1"]
-  [:div#tl2 "tl2"]
-  [:div#tl3 "tl3"]
-
-  [:div#tr1 "tr1"]
-  [:div#tr2 "tr2"])
-
-(defn first-col-a []
-  [:div#tc1 "tc1"]
-  [:div#tc2 "tc2"]
-  [:div#tc3 "tc3"]
-  [:div#tc4 "tc4"]
-  [:div#tc5 "tc5"])
+(defn render-component [component id]
+  (r/render component (.getElementById js/document id)))
 
 (defn render-numpad []
-  (r/render [numpad first-line-a first-col-a] (.-body js/document)))
+  (render-component [Numpad map-default] "app"))
 

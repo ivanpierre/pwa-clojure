@@ -4,4 +4,4 @@
             [pwa-clojure.app :as app]))
 
 (defn -main []
-  (jetty/run-jetty app/app {:port 3000}))
+  (jetty/run-jetty app/app {:port 3333}))

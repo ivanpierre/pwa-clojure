@@ -3,18 +3,24 @@
             [pwa-clojure.pages :as pages]
             [pwa-clojure.server.data :as data]))
 
+(defn css [name]
+  [:link {:rel "stylesheet" :href name}])
+
 (defn layout [component title seo-fields]
   {:headers {"Content-Type" "text/html"}
    :body
    (html5
-    [:head
-     {:profile "http://www.w3.org/2005/10/profile"}
+    [:head {:profile "http://www.w3.org/2005/10/profile"} ; needed for favicon change
      [:title title]
-     [:link {:rel "stylesheet" :href "/css/main.css"}]
+     (css "/css/main.css")
+     ;[:link {:rel "stylesheet" :href "/css/main.css"}]
+     (css "/css/numpad.css")
+     (css "/css/vente.css")
+     (css "https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Open+Sans:400,800")
+     ;[:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Open+Sans:400,800"}]
      [:link {:rel "manifest" :href "/manifest.json"}]
      [:link {:rel "icon" :type "image/png" :href "/favicon.png"}]
      [:meta {:name "description" :content "Home Page"}]
-     [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Open+Sans:400,800"}]
      [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
      [:meta {:name "apple-mobile-web-app-capable" :content "yes"}]
      [:meta {:name "apple-mobile-web-app-status-bar-style" :content "black"}]
@@ -35,7 +41,9 @@
     (layout component (pages/title handler data) (seo-fields handler data))))
 
 (defn empty-component []
-  [:div.app-loading])
+  [:div
+   "L'application démarre"
+   [:div.app-loading]])
 
 (defn shell-page [request]
   (layout (empty-component) "PWA App!" []))

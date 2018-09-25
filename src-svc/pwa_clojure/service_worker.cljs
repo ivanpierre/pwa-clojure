@@ -61,7 +61,7 @@
   (let [request (.-request e)
         url (-> request .-url url/url)]
     (case (:host url)
-      ("localhost" "pwa-clojure.staging.quintype.io")
+      ("localhost" "optiflex.local")
       (fetch-page-or-cached (:path url) e)
 
       "my-images.net"

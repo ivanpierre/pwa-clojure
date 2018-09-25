@@ -1,13 +1,12 @@
 (ns pwa-clojure.main
-  (:require [pwa-clojure.navigation :as navigation]
-            [pwa-clojure.components.vente :as vente]))
+  (:require [pwa-clojure.components.vente :as vente]))
 
 (defn- get-current-path []
   js/window.location.pathname)
 
 (defn- make-progressive! []
   (when js/navigator.serviceWorker
-    (.register js/navigator.serviceWorker "/service-worker.js")))
+    (.register js/navigator.serviceWorker "/js/worker/service-worker.js")))
 
 (defonce app-loaded (atom false))
 (defn load-app []
@@ -17,7 +16,9 @@
 
 (defn ^:export start-cljs-app []
   ;(navigation/move-to-page (get-current-path) load-app)
+  (console.log "loading main.cljs with path : " (get-current-path))
   (load-app)
   (make-progressive!))
 
+(console.log "loading main.cljs")
 (start-cljs-app)

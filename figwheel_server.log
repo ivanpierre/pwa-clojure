@@ -1,0 +1,35 @@
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/pwa_clojure/components/vente.cljs   line:28  column:1  ----[0m
+
+  [1mUse of undeclared Var pwa-clojure.components.vente/uztruztur[0m
+
+  [36m25[0m  [36m(defn render-vente [][0m
+  [36m26[0m  [36m  (render-component [Vente map-vente] "app"))[0m
+  [36m27[0m  [36m[0m
+  [33m28[0m  [1muztruztur[0m
+  [0m  [0m  [33m^--- Use of undeclared Var pwa-clojure.components.vente/uztruztur[0m
+
+[36m----  Compiler Warning : Please see src-cljs/pwa_clojure/components/vente.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.767 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/dev/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/dev/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/dev/pwa_clojure/components/vente.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/pwa_clojure/components/vente.cljs   line:28  column:1  ----[0m
+
+  [1mUse of undeclared Var pwa-clojure.components.vente/uztruztur[0m
+
+  [36m25[0m  [36m(defn render-vente [][0m
+  [36m26[0m  [36m  (render-component [Vente map-vente] "app"))[0m
+  [36m27[0m  [36m[0m
+  [33m28[0m  [1muztruztur[0m
+  [0m  [0m  [33m^--- Use of undeclared Var pwa-clojure.components.vente/uztruztur[0m
+
+[36m----  Compiler Warning : Please see src-cljs/pwa_clojure/components/vente.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.288 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/dev/pwa_clojure/components/vente.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.662 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/goog/deps.js
+notifying browser that file changed:  resources/public/js/dev/cljs_deps.js
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/main.js

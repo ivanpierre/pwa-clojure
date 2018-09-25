@@ -1,0 +1,5 @@
+{:main pwa-clojure.core
+ :connect-url "ws://[[config-hostname]]:[[server-port]]/figwheel-connect"
+ :websocket-host "optiflex.local"
+ :nrepl-host "0.0.0.0"
+ :ring-server-options {:host "optiflex.local"}}

@@ -11,3 +11,8 @@ pom.xml.asc
 .hg/
 /resources/public/service-worker.js
 /resources/public/js
+figwheel_server.log
+.cpcache
+target
+.lein-repl-history
+figwheel_server.log

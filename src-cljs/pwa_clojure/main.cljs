@@ -14,8 +14,9 @@
 (defn ^:export start-cljs-app []
   ;(navigation/move-to-page (get-current-path) load-app)
   ; (console.log "loading main.cljs with path : " (get-current-path))
+  (js.console.log "Enter in start-cljs-app")
   (load-app)
   (make-progressive!))
 
-; (console.log "loading main.cljs")
+(js/console.log "loading main.cljs")
 (start-cljs-app)

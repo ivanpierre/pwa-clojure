@@ -22,5 +22,7 @@
 (defn render-component [component id]
   (r/render component (.getElementById js/document id)))
 
+(js/console.log "coucou")
+
 (defn render-vente []
   (render-component [Vente map-vente] "app"))

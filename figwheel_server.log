@@ -33,3 +33,44 @@ Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
 notifying browser that file changed:  resources/public/js/dev/goog/deps.js
 notifying browser that file changed:  resources/public/js/dev/cljs_deps.js
 notifying browser that file changed:  resources/public/js/dev/pwa_clojure/main.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.545 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/goog/deps.js
+notifying browser that file changed:  resources/public/js/dev/cljs_deps.js
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/main.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.524 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/main.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.665 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/goog/deps.js
+notifying browser that file changed:  resources/public/js/dev/cljs_deps.js
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/main.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.533 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/main.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.81 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/goog/deps.js
+notifying browser that file changed:  resources/public/js/dev/cljs_deps.js
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/main.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.536 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/main.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.665 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/goog/deps.js
+notifying browser that file changed:  resources/public/js/dev/cljs_deps.js
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/components/vente.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.528 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/components/vente.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.552 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/components/vente.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.515 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/components/vente.js
+Compiling build :dev to "resources/public/js/dev/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/dev/main.js" in 0.493 seconds.[0m
+notifying browser that file changed:  resources/public/js/dev/pwa_clojure/components/vente.js

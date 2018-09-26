@@ -16,12 +16,12 @@
                     js/Promise.all)))))
 
 (def files-to-cache [; "/js/main.js"
-                     "/index.html"
+                     ; "/index.html"
                      "/favicon.png"
                      ; "/css/main.css"
                      "/css/pw_maze_white.png"
                      "/css/gears.svg"
-                     "/shell.html"
+                     ; "/shell.html"
 
                      "https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Open+Sans:400,800"])
 

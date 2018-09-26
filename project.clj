@@ -36,7 +36,10 @@
   :cljsbuild
   {:builds {:dev
             {:source-paths ["src-cljs"]
+             :watch-paths ["src-cljs"]
              :figwheel {; :websocket-host "optiflex.ivanpierre.world"
+                        :load-warninged-code false
+                        :on-jsload "pwa-clojure.main/fig-reload-hook"
                         :websocket-url "ws://optiflex.ivanpierre.world:3449/figwheel-ws"}
              :compiler {:output-to "resources/public/js/dev/main.js"
                         :output-dir "resources/public/js/dev"
